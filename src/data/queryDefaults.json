@@ -1,0 +1,16 @@
+{
+  "score": {
+    "type": "score",
+    "min": 0,
+    "max": "10",
+    "sortBy": "releaseYear"
+  },
+  "name": { "type": "name", "name": "" },
+  "query": {
+    "type": "query",
+    "sort_by": "release_date.desc",
+    "page": 1,
+    "year": "",
+    "with_genres": ""
+  }
+}

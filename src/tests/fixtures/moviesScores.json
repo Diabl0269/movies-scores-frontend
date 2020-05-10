@@ -1,0 +1,19 @@
+[
+  {
+    "name": "The Lion King",
+    "scoreObjs": [
+      {
+        "votingUserId": 1,
+        "score": 5
+      },
+      {
+        "votingUserId": 2,
+        "score": 10
+      }
+    ],
+    "averageScoreObj": {
+      "count": 2,
+      "average": 7.5
+    }
+  }
+]

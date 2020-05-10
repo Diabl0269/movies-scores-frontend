@@ -1,0 +1,13 @@
+* {
+  h2 {
+    @media (max-width: $media-breakpoint) {
+      font-size: 2vw;
+    }
+  }
+}
+
+h2 {
+  @media (max-width: $media-breakpoint) {
+    size: 1px;
+  }
+}

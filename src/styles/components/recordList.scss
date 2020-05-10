@@ -1,0 +1,23 @@
+#recordsListContainer {
+  border: 1px solid $border-color;
+  border-radius: $border-radius-size;
+  margin-top: $s-mp;
+  width: 50vw;
+  min-width: 170px;
+
+  #recordsListHeader {
+    background: $light-grey;
+  }
+
+  #scoresHeadCell {
+    text-align: right;
+  }
+}
+
+#scorePoper {
+  padding: $s-mp;
+
+  #messageContainer {
+    text-align: center;
+  }
+}

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`this is a context for checking auth and getting the user should render a loader while getting a user 1`] = `ShallowWrapper {}`;
+
+exports[`this is a context for checking auth and getting the user should render successfully 1`] = `ShallowWrapper {}`;

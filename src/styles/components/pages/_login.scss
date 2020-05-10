@@ -1,0 +1,25 @@
+#loginPageContentContainer {
+  @include page-content-container;
+
+  #fields {
+    @include flex-col;
+    padding: $s-mp;
+    div {
+        margin: .1vw;
+    }
+  }
+
+  #buttonsContainer {
+    button {
+      background: $light-grey;
+      &:hover {
+        background: darken($light-grey, 10%);
+      }
+    }
+  }
+
+  #errorMessage {
+    padding: $s-mp;
+    color: red;
+  }
+}

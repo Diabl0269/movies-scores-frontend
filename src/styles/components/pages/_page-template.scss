@@ -1,0 +1,31 @@
+#innerPageContainer {
+  @include flex-col;
+  height: 100vh;
+  background-color: $light-grey;
+
+  #title {
+    @media (max-width: 200px) {
+      display: none;
+    }
+  }
+
+  #footerContainer {
+    @include flex-row;
+    align-items: center;
+    background-color: $light-black;
+    justify-content: space-between;
+    padding: $s-mp;
+
+    span {
+      color: $off-white;
+      width: 45vw;
+      @media (max-width: 900px) {
+        font-size: 2vw;
+      }
+    }
+
+    img {
+      width: 5vw;
+    }
+  }
+}

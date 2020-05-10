@@ -1,0 +1,19 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin page-content-container {
+  @include flex-col;
+  align-items: center;
+  background: $off-white;
+  box-shadow: 0 0 100px 0.1px lighten($light-black, $half);
+  height: $full;
+  justify-content: center;
+  text-align: center;
+}

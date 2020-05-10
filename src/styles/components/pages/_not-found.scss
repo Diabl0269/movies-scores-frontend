@@ -1,0 +1,8 @@
+#pageNotFoundContentContainer {
+  @include page-content-container;
+  align-items: center;
+
+  #textContainer {
+    position: relative;
+  }
+}
