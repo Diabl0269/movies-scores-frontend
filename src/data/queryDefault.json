@@ -1,0 +1,6 @@
+{
+  "sortBy": "averageScoreObj.average",
+  "score": { "min": 0, "max": 10 },
+  "releaseYear": { "min": 1900, "max": 2500 },
+  "genres": []
+}

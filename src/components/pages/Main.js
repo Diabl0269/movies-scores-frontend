@@ -9,7 +9,7 @@ import d from '../../data/dictionary'
 const Content = () => {
   return (
     <Container id="mainPageContentContainer">
-      <MoviesProvider>
+       <MoviesProvider>
         <Filters />
         <MoviesRecordsList />
       </MoviesProvider>

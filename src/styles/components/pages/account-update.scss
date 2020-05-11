@@ -1,0 +1,19 @@
+#accountUpdatePageContainer {
+  @include page-content-container;
+
+  #accountFieldsContainer {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      margin: $xs-mp;
+    }
+  }
+  #updateButton {
+    @include grey-button;
+  }
+
+  #errorMessageContainer{
+    color: red;
+  }
+}

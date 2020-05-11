@@ -5,16 +5,13 @@
     @include flex-col;
     padding: $s-mp;
     div {
-        margin: .1vw;
+      margin: 0.1vw;
     }
   }
 
   #buttonsContainer {
     button {
-      background: $light-grey;
-      &:hover {
-        background: darken($light-grey, 10%);
-      }
+      @include grey-button;
     }
   }
 

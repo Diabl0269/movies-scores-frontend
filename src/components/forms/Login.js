@@ -26,6 +26,7 @@ export default () => {
     const { data, status } = await login(values)
     if (!data) {
       if (status === 401) return setErrorMessage(d('userDosentExist'))
+      if (status === 500) return setErrorMessage(d('serverError'))
       return setErrorMessage(d('serverError'))
     }
     navigate('/')
@@ -59,13 +60,9 @@ export default () => {
   )
 
   const Buttons = () => (
-    <div id='buttonsContainer'>
-      <Button type="submit">
-        {d('login')}
-      </Button>
-      <Button onClick={() => navigate('/sign-up')}>
-        {d('signUp')}
-      </Button>
+    <div id="buttonsContainer">
+      <Button type="submit">{d('login')}</Button>
+      <Button onClick={() => navigate('/sign-up')}>{d('signUp')}</Button>
     </div>
   )
 

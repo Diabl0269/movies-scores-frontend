@@ -3,7 +3,7 @@
     "type": "score",
     "min": 0,
     "max": "10",
-    "sortBy": "releaseYear"
+    "sortBy": "desc"
   },
   "name": { "type": "name", "name": "" },
   "query": {

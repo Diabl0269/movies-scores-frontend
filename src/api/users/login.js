@@ -3,9 +3,12 @@ import axios from 'axios'
 export default async ({ email, password }) => {
   try {
     const { data } = await axios.post('/api/login', { email, password })
-    
-    return {data}
+
+    return { data }
   } catch (e) {
-    return e.toString().includes('401') ? { status: 401 } : undefined
+    let response
+    if (e.toString().includes('401')) response = { status: 401 }
+    if (e.toString().includes('500')) response = { status: 500 }
+    return response
   }
 }

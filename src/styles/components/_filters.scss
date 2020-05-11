@@ -2,32 +2,29 @@
   width: auto;
   border: 5px inset $light-blue;
   border-radius: 13px;
-
-  #queryTypeSelectorContainer {
-    @include flex-row;
-    justify-content: center;
-    @media (max-width: 900px) {
-      svg {
-        display: none;
-      }
-    }
-
-    #queryTypeSelectorText {
-      margin-right: 0.5vw;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-
-    #queryTypeSelector {
-      padding: 0 $s-mp 0 0;
-      width: 4vw;
-      text-align: start;
-      text-overflow: clip;
-      overflow: visible;
-    }
-  }
+  margin-top: $s-mp;
 
   #genreSelector {
     width: 23vw;
+  }
+
+  #scoreTitle{
+    text-align: start;
+  }
+
+  #scoreFieldsContainer{
+    .MuiFormControl-root{
+      width: 50%;
+    }
+  }
+
+  #releaseYearTitle{
+    text-align: start;
+  }
+
+  #releaseYearFieldsContainer{
+    .MuiFormControl-root{
+      width: 50%;
+    }
   }
 }

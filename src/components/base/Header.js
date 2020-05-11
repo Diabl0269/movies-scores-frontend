@@ -1,6 +1,7 @@
 import React from 'react'
-import { makeStyles, AppBar, Toolbar, Typography, IconButton, Button } from '@material-ui/core'
+import { makeStyles, AppBar, Toolbar, Typography, IconButton } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
+import UserButton from './UserButton'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,10 +34,10 @@ export default ({ setOpen, title }) => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title} id='title'>
+          <Typography variant="h6" className={classes.title} id="title">
             {title}
           </Typography>
-          <Button color="inherit" >Login</Button>
+          <UserButton />
         </Toolbar>
       </AppBar>
     </div>

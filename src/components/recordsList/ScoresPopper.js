@@ -27,7 +27,7 @@ export default ({ movie }) => {
 
   const changeHandler = async (e) => {
     if (!userExists) return alert(d('needToLogin'))
-    const { average, count } = await updateMovieScore({ movie, score: e.target.value })
+    const { average, count } = await updateMovieScore({ name, score: e.target.value })
     setAverageDisplay(average)
     setCountDisplay(count)
   }

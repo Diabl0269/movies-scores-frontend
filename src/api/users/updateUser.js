@@ -2,7 +2,14 @@ import axios from 'axios'
 
 export default async (newUserData) => {
   try {
-    const { data } = await axios.post('/api/users', newUserData)
+    const { token } = localStorage
+
+    const { data, status } = await axios.patch('/api/user', newUserData, {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    })
+
     return { data }
   } catch (e) {
     let response

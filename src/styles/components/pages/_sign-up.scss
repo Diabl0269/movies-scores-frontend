@@ -1,0 +1,19 @@
+#signUpPageConetentContainer {
+  @include page-content-container;
+
+  #signUpFieldsContainer {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      margin: $xs-mp;
+    }
+  }
+  #signUpButton {
+    @include grey-button;
+  }
+
+  #errorMessageContainer {
+    color: red;
+  }
+}

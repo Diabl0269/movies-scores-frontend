@@ -17,3 +17,10 @@
   justify-content: center;
   text-align: center;
 }
+
+@mixin grey-button {
+  background: $light-grey;
+  &:hover {
+    background: darken($light-grey, 10%);
+  }
+}

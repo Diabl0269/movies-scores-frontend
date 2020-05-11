@@ -1,0 +1,23 @@
+#accountPage {
+  @include page-content-container;
+
+  #detailsContainer {
+    margin: $s-mp;
+  }
+
+  #updateButton {
+    @include grey-button;
+  }
+
+  #deleteButton {
+    background: darken(red, 5%);
+    &:hover {
+      background: darken(red, 15%);
+    }
+  }
+}
+
+#deleteUserServerErrorMessageContainer{
+    color: red;
+    text-align: center;
+}

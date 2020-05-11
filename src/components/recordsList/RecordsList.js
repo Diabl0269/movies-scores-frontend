@@ -7,7 +7,7 @@ import ScoresPopper from './ScoresPopper'
 import d from '../../data/dictionary'
 
 export default () => {
-  const { gettingRecords, movies, type } = useMovies()
+  const { gettingRecords, movies } = useMovies()
 
   const RecordsList = () => (
     <TableContainer id="recordsListContainer">
